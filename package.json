@@ -1,0 +1,26 @@
+{
+  "name": "swaraj-kirana-store",
+  "version": "2.0.0",
+  "description": "Swaraj Kirana Store - A bilingual (English/Marathi) inventory and order management system for retail stores",
+  "type": "module",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SwarajPol1101/swaraj-Kirana-store_2.0.git"
+  },
+  "keywords": [
+    "kirana",
+    "store",
+    "inventory",
+    "bilingual",
+    "marathi"
+  ],
+  "author": "SwarajPol1101",
+  "license": "ISC"
+}

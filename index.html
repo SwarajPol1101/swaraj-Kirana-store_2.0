@@ -1,4 +1,5 @@
 <!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Swaraj Kirana Store</title>
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#10b981"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
 <style>
 :root{--bg:#0c1113;--cd:rgba(255,255,255,.06);--bd:rgba(255,255,255,.1);--tx:#e8f1ee;--mu:#8fa59d;--ac:#10b981;--dn:#f87171;--wr:#fbbf24;--in:rgba(255,255,255,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 :root[data-theme=light]{--bg:#f1f6f4;--cd:#fff;--bd:rgba(0,0,0,.1);--tx:#10201a;--mu:#5a6f67;--in:#eaf0ee}
@@ -210,9 +211,5 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b
 ['input','change'].forEach(ev=>document.addEventListener(ev,e=>{const c=e.target.dataset&&e.target.dataset.c;if(c&&C[c]){if(ev=='input'&&e.target.tagName=='SELECT')return;if(ev=='change'&&e.target.type=='text'&&c!='cdl')return;C[c](e.target.dataset.i,e.target,e)}}));
 try{localStorage.setItem('_t','1');localStorage.removeItem('_t')}catch(e){OK=false;setTimeout(()=>toast(t('stErr')),1200)}
 R();
-</script>
-<script>
-window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/speed-insights/script.js"></script>
-</body></html>
+if("serviceWorker" in navigator&&/^https?:/.test(location.protocol))navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script></body></html>
